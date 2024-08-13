@@ -349,6 +349,7 @@
 "Assets/HiHero/Scripts/Bullet.cs"
 "Assets/HiHero/Scripts/CameraControl.cs"
 "Assets/HiHero/Scripts/Enemy.cs"
+"Assets/HiHero/Scripts/HeroMove.cs"
 "Assets/HiHero/Scripts/Move.cs"
 "Assets/Kawaii Slimes/Cameras/Scripts/AbstractTargetFollower.cs"
 "Assets/Kawaii Slimes/Cameras/Scripts/FreeLookCam.cs"
