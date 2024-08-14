@@ -13,9 +13,7 @@ public class Move : MonoBehaviour
     }
 
     public float speed;
-
-    public GameObject bullet;
-    public GameObject bulPosition;
+    
     // Update is called once per frame
     void Update()
     {
@@ -35,14 +33,6 @@ public class Move : MonoBehaviour
         else if (Input.GetKey(KeyCode.D))
         {
             transform.Translate( Vector3.right * Time.deltaTime * speed);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GameObject bul =  Instantiate(bullet);
-            bul.SetActive(true);
-            bul.transform.position = bulPosition.transform.position;
-            Destroy(bul,2);
         }
     }
 }

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HeroMove : MonoBehaviour
-{   // 刚体
+{   
+    
+    // 刚体
     private Rigidbody rb;
     // 移动速度
     public float speed = 3.5f;
@@ -23,12 +25,15 @@ public class HeroMove : MonoBehaviour
     void FixedUpdate()
     {
         movementInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        
+        movement.Set(movementInput.x, 0, movementInput.y);
+        movement.Normalize();
+        
         // 检查输入
         bool horizontalInput = !Mathf.Approximately(movementInput.x, 0);
         bool verticalInput = !Mathf.Approximately(movementInput.y, 0);
         isRunning = horizontalInput || verticalInput;
-        movement.Set(movementInput.x, 0, movementInput.y);
-        movement.Normalize();
+        
         // 纵向移动跟随摄像机视角的正上方
         if (isRunning)
         {
