@@ -50,10 +50,10 @@
     <Compile Include="Assets\HiHero\Scripts\HeroMove.cs" />
     <Compile Include="Assets\Kawaii Slimes\Cameras\Scripts\AbstractTargetFollower.cs" />
     <Compile Include="Assets\HiHero\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Kawaii Slimes\Scripts\AI\EnemyAi.cs" />
-    <Compile Include="Assets\HiHero\Scripts\CameraControl.cs" />
     <Compile Include="Assets\HiHero\Scripts\BulletMove.cs" />
     <Compile Include="Assets\HiHero\Scripts\BulletActive.cs" />
+    <Compile Include="Assets\Kawaii Slimes\Scripts\AI\EnemyAi.cs" />
+    <Compile Include="Assets\HiHero\Scripts\CameraControl.cs" />
     <None Include="Assets\Kawaii Slimes\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Kawaii Slimes\Shader\Unity-chan Shader Ver 1.2.1\readme.txt" />
     <None Include="Assets\Kawaii Slimes\Shader\Unity-chan Shader Ver 1.2.1\Unitychan_chara_eye.shader" />
